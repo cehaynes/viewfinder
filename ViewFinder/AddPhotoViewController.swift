@@ -30,15 +30,21 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         present(imagePicker, animated: true, completion: nil)
     }
     
-    @IBAction func saveBtn(_ sender: Any) {
+    @IBAction func saveBtn(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            //stopeed here 6/11/19
+
+        }
     }
     
     @IBAction func albumBtn(_ sender: Any) {
+        
     }
     
     @IBOutlet weak var viewImage: UIImageView!
     
     @IBAction func textArea(_ sender: Any) {
+        
     }
     
     internal func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

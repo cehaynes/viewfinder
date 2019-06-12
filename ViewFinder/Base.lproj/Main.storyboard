@@ -76,15 +76,6 @@
                                     <action selector="photoLibraryBtn:" destination="T9T-hs-MqN" eventType="touchUpInside" id="QXM-ia-Sds"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeW-kd-tZZ">
-                                <rect key="frame" x="145" y="383" width="124" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="saveBtn:" destination="T9T-hs-MqN" eventType="touchUpInside" id="QmE-Ai-LN7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="707-KW-Mdn">
                                 <rect key="frame" x="270" y="560" width="124" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -104,12 +95,22 @@
                                     <action selector="cameraBtn:" destination="T9T-hs-MqN" eventType="touchUpInside" id="Ixm-L7-8vI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeW-kd-tZZ">
+                                <rect key="frame" x="145" y="450" width="124" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="T9T-hs-MqN" eventType="touchUpInside" id="QmE-Ai-LN7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="myC-H2-UdG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="Aoh-JS-Qoc"/>
                     <connections>
+                        <outlet property="captionText" destination="gpF-sd-jVG" id="RkK-o9-JLk"/>
                         <outlet property="viewImage" destination="pEC-0G-KnD" id="GQc-wh-TDZ"/>
                     </connections>
                 </viewController>
